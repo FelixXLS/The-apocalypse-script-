@@ -1,0 +1,19 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("The apocalypse", "Default")
+
+local tab = DrRayLibrary.newTab("Spawn tools", "ImageIdHere")
+
+tab.newButton("water", "spawn", function()
+
+workspace.Items.Water.Handle.InteractEvent:FireServer()
+end)
+
+tab.newButton("Ammo", "spawn", function()
+
+workspace.Items.Ammo.Handle.InteractEvent:FireServer()
+end) 
+
+tab.newButton("medkit", "spawn", function()
+
+workspace.Items.Medkit.Handle.InteractEvent:FireServer()
